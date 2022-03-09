@@ -1,0 +1,24 @@
+{
+  "Skills": [
+    {
+      "title": "Languages",
+      "listData": [
+        "C++",
+        "Java",
+        "Python",
+        "MATLAB",
+        "javascript",
+        "typescript",
+        "testtesttesttesttesttesttesttesttest"
+      ]
+    },
+    {
+      "title": "Technology",
+      "listData": ["OpenCV", "Docker", "Node.js", "GraphQL", "Cisco"]
+    },
+    {
+      "title": "Qualification",
+      "listData": ["AWS Solutions Architect Associate", "G検定", "E資格"]
+    }
+  ]
+}

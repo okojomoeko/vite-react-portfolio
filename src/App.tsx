@@ -1,45 +1,31 @@
-import { useState } from "react";
-import logo from "./assets/images/logo.svg";
+import React from "react";
 import "./App.css";
-import { Button } from "@mui/material";
+import { createTheme, CssBaseline, ThemeProvider } from "@mui/material";
+import { Layout } from "./components/Layout";
 
 function App() {
-  const [count, setCount] = useState(0);
+  const [themeFlagState] = React.useState({
+    themeFlag: true,
+  });
+  // TODO: for dark mode
+  // const prefersDarkMode = useMediaQuery('(prefers-color-scheme: dark)');
 
+  const theme = React.useMemo(
+    () =>
+      createTheme({
+        palette: {
+          mode: themeFlagState.themeFlag ? "dark" : "light",
+        },
+      }),
+    [themeFlagState]
+  );
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>Hello Vite + React!</p>
-        <p>
-          <Button onClick={() => setCount((count) => count + 1)}>
-            count is: {count}
-          </Button>
-        </p>
-        <p>
-          Edit <code>App.tsx</code> and save to test HMR updates.
-        </p>
-        <p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-          {" | "}
-          <a
-            className="App-link"
-            href="https://vitejs.dev/guide/features.html"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Vite Docs
-          </a>
-        </p>
-      </header>
-    </div>
+    <ThemeProvider theme={theme}>
+      <CssBaseline />
+      <div className="App">
+        <Layout />
+      </div>
+    </ThemeProvider>
   );
 }
 
