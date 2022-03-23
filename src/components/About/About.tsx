@@ -11,32 +11,27 @@ const About: React.FC = () => {
     setValue(aboutsTemplate.Abouts);
   }, [value]);
   return (
-    <>
-      <Box p={2} id="About">
-        <>
-          <Box display="flex" justifyContent="center" p={1}>
-            <Typography variant="h3">About</Typography>
-          </Box>
-          簡単な経歴
-          <Box display="flex" justifyContent="center" p={1}>
-            <Typography variant="body1" align="left" />
-          </Box>
-        </>
+    <Box p={2} id="About">
+      <>
+        <Box display="flex" justifyContent="center" p={1}>
+          <Typography variant="h3">About</Typography>
+        </Box>
+        簡単な経歴
+        <Box display="flex" justifyContent="center" p={1}>
+          <Typography variant="body1" align="left" />
+        </Box>
+      </>
 
-        {value.length !== 0 ? (
-          value.map((about) => (
-            <AboutDetail
-              YearHeader={about.YearHeader}
-              MainHeader={about.MainHeader}
-              Description={about.Description}
-              key={about.MainHeader}
-            />
-          ))
-        ) : (
-          <></>
-        )}
-      </Box>
-    </>
+      {value.length !== 0 &&
+        value.map((about) => (
+          <AboutDetail
+            YearHeader={about.YearHeader}
+            MainHeader={about.MainHeader}
+            Description={about.Description}
+            key={about.MainHeader}
+          />
+        ))}
+    </Box>
   );
 };
 

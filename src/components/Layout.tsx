@@ -1,6 +1,6 @@
 import styled from "@emotion/styled";
 import { Navbar } from "./Navbar";
-import Hero from "./Hero";
+import { Hero } from "./Hero";
 import SkillsAndInterests from "./SkillsAndInterests/SkillsAndInterests";
 import About from "./About/About";
 import { Works } from "./Work/Work";
