@@ -48,9 +48,5 @@ export const SkillsAndInterestsDetail = (props: SkillsAndInterestsDetailProps) =
     </StyledBox>
   );
 
-  return (
-    <>
-      <FadeIn>{retComponent}</FadeIn>
-    </>
-  );
+  return <FadeIn>{retComponent}</FadeIn>;
 };

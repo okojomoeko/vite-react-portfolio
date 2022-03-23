@@ -3,7 +3,7 @@ import "./App.css";
 import { createTheme, CssBaseline, ThemeProvider } from "@mui/material";
 import { Layout } from "./components/Layout";
 
-function App() {
+const App = () => {
   const [themeFlagState] = React.useState({
     themeFlag: true,
   });
@@ -27,6 +27,6 @@ function App() {
       </div>
     </ThemeProvider>
   );
-}
+};
 
 export default App;

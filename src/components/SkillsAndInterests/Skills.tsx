@@ -30,22 +30,15 @@ export const Skills: React.FC = () => {
   }, [value]);
 
   return (
-    <>
-      <StyledBox p={2} id="Skills">
-        <>
-          <Box display="flex" justifyContent="center" p={1}>
-            <Typography variant="h3">Skills</Typography>
-          </Box>
-          <StyledComputerIcon />
-          {value.length !== 0 ? (
-            value.map((interest) => (
-              <SkillsAndInterestsDetail title={interest.title} listData={interest.listData} key={interest.title} />
-            ))
-          ) : (
-            <></>
-          )}
-        </>
-      </StyledBox>
-    </>
+    <StyledBox p={2} id="Skills">
+      <Box display="flex" justifyContent="center" p={1}>
+        <Typography variant="h3">Skills</Typography>
+      </Box>
+      <StyledComputerIcon />
+      {value.length !== 0 &&
+        value.map((interest) => (
+          <SkillsAndInterestsDetail title={interest.title} listData={interest.listData} key={interest.title} />
+        ))}
+    </StyledBox>
   );
 };

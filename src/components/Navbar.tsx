@@ -24,20 +24,19 @@ export const Navbar = () => (
   //   });
   // };
 
-  <>
-    <StyledAppBar position="fixed">
-      <Toolbar>
-        <Link activeClass="active" to="About" spy smooth offset={-70} duration={500}>
-          <Button color="inherit">ABOUT</Button>
-        </Link>
-        <Link activeClass="active" to="Interests" spy smooth offset={-70} duration={500}>
-          <Button color="inherit">SKILLS & INTEREST</Button>
-        </Link>
-        <Link activeClass="active" to="Works" spy smooth offset={-70} duration={500}>
-          <Button color="inherit">WORKS</Button>
-        </Link>
-      </Toolbar>
-      {/* <FormControlLabel
+  <StyledAppBar position="fixed">
+    <Toolbar>
+      <Link activeClass="active" to="About" spy smooth offset={-70} duration={500}>
+        <Button color="inherit">ABOUT</Button>
+      </Link>
+      <Link activeClass="active" to="Interests" spy smooth offset={-70} duration={500}>
+        <Button color="inherit">SKILLS & INTEREST</Button>
+      </Link>
+      <Link activeClass="active" to="Works" spy smooth offset={-70} duration={500}>
+        <Button color="inherit">WORKS</Button>
+      </Link>
+    </Toolbar>
+    {/* <FormControlLabel
           control={
             <Switch
               checked={props.themeFlagState.themeFlag}
@@ -48,6 +47,5 @@ export const Navbar = () => (
           }
           label="Dark Theme"
         /> */}
-    </StyledAppBar>
-  </>
+  </StyledAppBar>
 );

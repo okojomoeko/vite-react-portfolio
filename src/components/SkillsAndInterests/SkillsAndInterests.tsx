@@ -1,5 +1,5 @@
 import { styled } from "@mui/material/styles";
-import React, { Fragment } from "react";
+import React from "react";
 import ContentWrapper from "../../styles/ContentWrapper";
 import { Interests } from "./Interests";
 import { Skills } from "./Skills";
@@ -15,12 +15,10 @@ const StyledContentWrapper = styled(ContentWrapper)(() => ({
 }));
 
 const SkillsAndInterests: React.FC = () => (
-  <>
-    <StyledContentWrapper>
-      <Interests />
-      <Skills />
-    </StyledContentWrapper>
-  </>
+  <StyledContentWrapper>
+    <Interests />
+    <Skills />
+  </StyledContentWrapper>
 );
 
 export default SkillsAndInterests;

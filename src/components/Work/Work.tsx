@@ -50,13 +50,10 @@ export const Works: React.FC = () => {
 
       <Box display="flex" justifyContent="center" p={1}>
         <StyledList>
-          {value.length !== 0 ? (
+          {value.length !== 0 &&
             value.map((work, index) => (
               <WorksListDetail index={index} data={work} handleOpen={handleOpen} key={work.Name} />
-            ))
-          ) : (
-            <></>
-          )}
+            ))}
         </StyledList>
       </Box>
 
