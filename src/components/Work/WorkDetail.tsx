@@ -1,14 +1,4 @@
-import {
-  Box,
-  Button,
-  Dialog,
-  DialogActions,
-  DialogContent,
-  DialogTitle,
-  IconButton,
-  styled,
-  Typography,
-} from "@mui/material";
+import { Box, Dialog, DialogActions, DialogContent, DialogTitle, IconButton, styled } from "@mui/material";
 import React, { Fragment } from "react";
 import CloseIcon from "@mui/icons-material/Close";
 
@@ -33,12 +23,7 @@ const StyledDialogTitle = (props: DialogTitleProps) => {
   return (
     /* eslint-disable react/jsx-props-no-spreading */
     <DialogTitle {...other}>
-      <Typography variant="h6">{children}</Typography>
-      {onClose ? (
-        <StyledIconButton aria-label="close" onClick={onClose}>
-          <CloseIcon />
-        </StyledIconButton>
-      ) : null}
+      <div style={{ whiteSpace: "pre-line" }}>{children}</div>
     </DialogTitle>
   );
 };
@@ -51,16 +36,16 @@ const StyledDialogActions = styled(DialogActions)(({ theme }) => ({
   padding: theme.spacing(1),
 }));
 
-interface IWorksTechnologyProps {
+interface WorksTechnologyProps {
   data: string[];
 }
 
-const WorksTechnology = (props: IWorksTechnologyProps) => {
+const WorksTechnology = (props: WorksTechnologyProps) => {
   const worksTechnologies = [];
   const { data } = props;
   const numData = data.length;
   for (let i = 0; i < numData; i += 1) {
-    worksTechnologies.push(<li>{data[i]}</li>);
+    worksTechnologies.push(<li key={i}>{data[i]}</li>);
   }
 
   return (
@@ -71,14 +56,14 @@ const WorksTechnology = (props: IWorksTechnologyProps) => {
   );
 };
 
-interface IWorkDetailProps {
+interface WorkDetailProps {
   handleClose: () => void;
   open: boolean;
   index: number;
   data: Work[];
 }
 
-export const WorkDetail = (props: IWorkDetailProps) => {
+export const WorkDetail = (props: WorkDetailProps) => {
   const { handleClose, open, index, data } = props;
 
   return (
@@ -89,18 +74,16 @@ export const WorkDetail = (props: IWorkDetailProps) => {
       <StyledDialogContent dividers>
         <Box p={2} display="flex" justifyContent="center">
           {index !== -1 && (
-            <img src={`${getImageUrl(data[index].ImgPath)}`} alt="海の写真" title="空と海" width="70%" height="auto" />
+            <img src={`${getImageUrl(data[index].ImgPath)}`} alt={data[index].Name} width="70%" height="auto" />
           )}
         </Box>
-        <Box p={2}>
-          <Typography gutterBottom>{index !== -1 ? data[index].Description : ""}</Typography>
-        </Box>
+        <Box p={2}>{index !== -1 ? data[index].Description : ""}</Box>
         <Box p={2}>{index !== -1 ? <WorksTechnology data={data[index].Technology} /> : ""}</Box>
       </StyledDialogContent>
       <StyledDialogActions>
-        <Button autoFocus onClick={handleClose} color="primary">
-          閉じる
-        </Button>
+        <StyledIconButton aria-label="close" onClick={handleClose}>
+          <CloseIcon />
+        </StyledIconButton>
       </StyledDialogActions>
     </Dialog>
   );
