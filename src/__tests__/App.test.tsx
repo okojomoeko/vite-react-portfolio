@@ -14,7 +14,6 @@ beforeEach(() => {
   // });
   // TODO
   // fix below ignoring code
-  // @ts-expect-error type
   globalThis.IntersectionObserver = vi.fn().mockImplementation(intersectionObserverMock);
 });
 
