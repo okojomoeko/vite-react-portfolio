@@ -1,0 +1,37 @@
+name: Test site
+
+on:
+  pull_request:
+    branches:
+      - develop
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Install Node
+        uses: actions/setup-node@v1
+        with:
+          node-version: 14.17.6
+
+      - uses: actions/cache@v2
+        with:
+          path: ~/.npm
+          key: node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            node-
+      - name: Install dependencies and build
+        run: |
+          npm ci
+          npm run build
+      - name: Lint
+        run: |
+          npm run lint
+      - name: Test
+        run: |
+          npm test
