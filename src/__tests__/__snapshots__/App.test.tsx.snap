@@ -6,7 +6,7 @@ exports[`Simple working test > should increment count on click 1`] = `
     <header class=\\"MuiPaper-root MuiPaper-elevation MuiPaper-elevation4 MuiAppBar-root MuiAppBar-colorPrimary MuiAppBar-positionFixed mui-fixed css-whsotq-MuiPaper-root-MuiAppBar-root\\">
       <div class=\\"MuiToolbar-root MuiToolbar-gutters MuiToolbar-regular css-hyum1k-MuiToolbar-root\\"><a><button class=\\"MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textInherit MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorInherit MuiButton-root MuiButton-text MuiButton-textInherit MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorInherit css-1ekild3-MuiButtonBase-root-MuiButton-root\\" tabindex=\\"0\\" type=\\"button\\">ABOUT<span class=\\"MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root\\"></span></button></a><a><button class=\\"MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textInherit MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorInherit MuiButton-root MuiButton-text MuiButton-textInherit MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorInherit css-1ekild3-MuiButtonBase-root-MuiButton-root\\" tabindex=\\"0\\" type=\\"button\\">SKILLS & INTEREST<span class=\\"MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root\\"></span></button></a><a><button class=\\"MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textInherit MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorInherit MuiButton-root MuiButton-text MuiButton-textInherit MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-colorInherit css-1ekild3-MuiButtonBase-root-MuiButton-root\\" tabindex=\\"0\\" type=\\"button\\">WORKS<span class=\\"MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root\\"></span></button></a></div>
     </header>
-    <h1 style=\\"height: 0; display: flex; justify-content: center; align-items: center;\\">Hi, I'm okojomoeko!!!!</h1>
+    <h1 style=\\"height: 0; display: flex; justify-content: center; align-items: center; opacity: 0;\\">Hi, I'm okojomoeko!!!!</h1>
     <div class=\\"MuiBox-root css-19midj6\\" id=\\"About\\">
       <div class=\\"MuiBox-root css-f40aod\\">
         <h3 class=\\"MuiTypography-root MuiTypography-h3 css-gepadz-MuiTypography-root\\">About</h3>
@@ -14,7 +14,7 @@ exports[`Simple working test > should increment count on click 1`] = `
         <p class=\\"MuiTypography-root MuiTypography-body1 MuiTypography-alignLeft css-zpphrz-MuiTypography-root\\"></p>
       </div>
       <div class=\\"MuiBox-root css-0\\">
-        <div>
+        <div style=\\"opacity: 0;\\">
           <div class=\\"MuiBox-root css-1cc42ae\\">
             <div class=\\"MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-3 css-24kkdk-MuiGrid-root\\">
               <div class=\\"MuiGrid-root MuiGrid-item MuiGrid-grid-xs-4 css-1vzihxs-MuiGrid-root\\">
@@ -29,7 +29,7 @@ exports[`Simple working test > should increment count on click 1`] = `
         </div>
       </div>
       <div class=\\"MuiBox-root css-0\\">
-        <div>
+        <div style=\\"opacity: 0;\\">
           <div class=\\"MuiBox-root css-1cc42ae\\">
             <div class=\\"MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-3 css-24kkdk-MuiGrid-root\\">
               <div class=\\"MuiGrid-root MuiGrid-item MuiGrid-grid-xs-4 css-1vzihxs-MuiGrid-root\\">
@@ -44,7 +44,7 @@ exports[`Simple working test > should increment count on click 1`] = `
         </div>
       </div>
       <div class=\\"MuiBox-root css-0\\">
-        <div>
+        <div style=\\"opacity: 0;\\">
           <div class=\\"MuiBox-root css-1cc42ae\\">
             <div class=\\"MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-3 css-24kkdk-MuiGrid-root\\">
               <div class=\\"MuiGrid-root MuiGrid-item MuiGrid-grid-xs-4 css-1vzihxs-MuiGrid-root\\">
@@ -59,7 +59,7 @@ exports[`Simple working test > should increment count on click 1`] = `
         </div>
       </div>
       <div class=\\"MuiBox-root css-0\\">
-        <div>
+        <div style=\\"opacity: 0;\\">
           <div class=\\"MuiBox-root css-1cc42ae\\">
             <div class=\\"MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-3 css-24kkdk-MuiGrid-root\\">
               <div class=\\"MuiGrid-root MuiGrid-item MuiGrid-grid-xs-4 css-1vzihxs-MuiGrid-root\\">
@@ -79,12 +79,12 @@ exports[`Simple working test > should increment count on click 1`] = `
         <div class=\\"MuiBox-root css-f40aod\\">
           <h3 class=\\"MuiTypography-root MuiTypography-h3 css-gepadz-MuiTypography-root\\">Interests</h3>
         </div><svg class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-cxnso1-MuiSvgIcon-root\\" focusable=\\"false\\" aria-hidden=\\"true\\" viewBox=\\"0 0 24 24\\" data-testid=\\"FavoriteIcon\\">
-          <path d=\\"m12 21.35-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z\\" />
+          <path d=\\"m12 21.35-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z\\"></path>
         </svg>
         <div>
           <div style=\\"transition: opacity 400ms, transform 400ms; transform: translateY(20px); opacity: 0;\\">
             <div class=\\"MuiBox-root css-1626bqa\\">
-              <div>
+              <div style=\\"opacity: 0;\\">
                 <div class=\\"MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-1wjfa06-MuiPaper-root-MuiCard-root\\">
                   <div class=\\"MuiCardContent-root css-1ukd862-MuiCardContent-root\\">
                     <h6 class=\\"MuiTypography-root MuiTypography-h6 css-2ulfj5-MuiTypography-root\\">大好き</h6>
@@ -98,7 +98,7 @@ exports[`Simple working test > should increment count on click 1`] = `
         <div>
           <div style=\\"transition: opacity 400ms, transform 400ms; transform: translateY(20px); opacity: 0;\\">
             <div class=\\"MuiBox-root css-1626bqa\\">
-              <div>
+              <div style=\\"opacity: 0;\\">
                 <div class=\\"MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-1wjfa06-MuiPaper-root-MuiCard-root\\">
                   <div class=\\"MuiCardContent-root css-1ukd862-MuiCardContent-root\\">
                     <h6 class=\\"MuiTypography-root MuiTypography-h6 css-2ulfj5-MuiTypography-root\\">まぁ好き</h6>
@@ -114,12 +114,12 @@ exports[`Simple working test > should increment count on click 1`] = `
         <div class=\\"MuiBox-root css-f40aod\\">
           <h3 class=\\"MuiTypography-root MuiTypography-h3 css-gepadz-MuiTypography-root\\">Skills</h3>
         </div><svg class=\\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-cxnso1-MuiSvgIcon-root\\" focusable=\\"false\\" aria-hidden=\\"true\\" viewBox=\\"0 0 24 24\\" data-testid=\\"ComputerOutlinedIcon\\">
-          <path d=\\"M20 18c1.1 0 1.99-.9 1.99-2L22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2H0v2h24v-2h-4zM4 6h16v10H4V6z\\" />
+          <path d=\\"M20 18c1.1 0 1.99-.9 1.99-2L22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2H0v2h24v-2h-4zM4 6h16v10H4V6z\\"></path>
         </svg>
         <div>
           <div style=\\"transition: opacity 400ms, transform 400ms; transform: translateY(20px); opacity: 0;\\">
             <div class=\\"MuiBox-root css-1626bqa\\">
-              <div>
+              <div style=\\"opacity: 0;\\">
                 <div class=\\"MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-1wjfa06-MuiPaper-root-MuiCard-root\\">
                   <div class=\\"MuiCardContent-root css-1ukd862-MuiCardContent-root\\">
                     <h6 class=\\"MuiTypography-root MuiTypography-h6 css-2ulfj5-MuiTypography-root\\">Languages</h6>
@@ -133,7 +133,7 @@ exports[`Simple working test > should increment count on click 1`] = `
         <div>
           <div style=\\"transition: opacity 400ms, transform 400ms; transform: translateY(20px); opacity: 0;\\">
             <div class=\\"MuiBox-root css-1626bqa\\">
-              <div>
+              <div style=\\"opacity: 0;\\">
                 <div class=\\"MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-1wjfa06-MuiPaper-root-MuiCard-root\\">
                   <div class=\\"MuiCardContent-root css-1ukd862-MuiCardContent-root\\">
                     <h6 class=\\"MuiTypography-root MuiTypography-h6 css-2ulfj5-MuiTypography-root\\">Technology</h6>
@@ -147,7 +147,7 @@ exports[`Simple working test > should increment count on click 1`] = `
         <div>
           <div style=\\"transition: opacity 400ms, transform 400ms; transform: translateY(20px); opacity: 0;\\">
             <div class=\\"MuiBox-root css-1626bqa\\">
-              <div>
+              <div style=\\"opacity: 0;\\">
                 <div class=\\"MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-1wjfa06-MuiPaper-root-MuiCard-root\\">
                   <div class=\\"MuiCardContent-root css-1ukd862-MuiCardContent-root\\">
                     <h6 class=\\"MuiTypography-root MuiTypography-h6 css-2ulfj5-MuiTypography-root\\">Qualification</h6>
@@ -166,40 +166,40 @@ exports[`Simple working test > should increment count on click 1`] = `
       </div>
       <div class=\\"MuiBox-root css-f40aod\\">
         <ul class=\\"MuiList-root MuiList-padding css-ewqi2d-MuiList-root\\">
-          <div>
+          <div style=\\"opacity: 0;\\">
             <li class=\\"MuiListItem-root MuiListItem-gutters MuiListItem-padding css-13v49lt-MuiListItem-root\\"><a class=\\"MuiButtonBase-root MuiListItem-root MuiListItem-gutters MuiListItem-padding MuiListItem-button css-ltlrkn-MuiButtonBase-root-MuiListItem-root\\" tabindex=\\"0\\" role=\\"button\\">
                 <div class=\\"MuiListItemAvatar-root css-1e9lk82-MuiListItemAvatar-root\\">
-                  <div class=\\"MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault css-1fhxy4v-MuiAvatar-root\\"><img src=\\"file:///src/assets/images/works/disney-congestion.jpg\\" alt=\\"ディズニーリアルタイム待ち時間LINE-bot\\" width=\\"100%\\" height=\\"auto\\" /></div>
+                  <div class=\\"MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault css-1fhxy4v-MuiAvatar-root\\"><img src=\\"file:///src/assets/images/works/disney-congestion.jpg\\" alt=\\"ディズニーリアルタイム待ち時間LINE-bot\\" width=\\"100%\\" height=\\"auto\\"></div>
                 </div>
                 <div class=\\"MuiListItemText-root MuiListItemText-multiline css-konndc-MuiListItemText-root\\"><span class=\\"MuiTypography-root MuiTypography-body1 MuiListItemText-primary css-10hburv-MuiTypography-root\\">ディズニーリアルタイム待ち時間LINE-bot</span>
                   <p class=\\"MuiTypography-root MuiTypography-body2 MuiListItemText-secondary css-1ijlrmj-MuiTypography-root\\">ディズニーランド、ディズニーシーのリアルタイム待ち時間を教えてくれるLINE-bot</p>
                 </div><span class=\\"MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root\\"></span>
               </a></li>
           </div>
-          <div>
+          <div style=\\"opacity: 0;\\">
             <li class=\\"MuiListItem-root MuiListItem-gutters MuiListItem-padding css-13v49lt-MuiListItem-root\\"><a class=\\"MuiButtonBase-root MuiListItem-root MuiListItem-gutters MuiListItem-padding MuiListItem-button css-ltlrkn-MuiButtonBase-root-MuiListItem-root\\" tabindex=\\"0\\" role=\\"button\\">
                 <div class=\\"MuiListItemAvatar-root css-1e9lk82-MuiListItemAvatar-root\\">
-                  <div class=\\"MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault css-1fhxy4v-MuiAvatar-root\\"><img src=\\"file:///src/assets/images/works/infra-register.jpg\\" alt=\\"水道光熱費登録LINE-bot\\" width=\\"100%\\" height=\\"auto\\" /></div>
+                  <div class=\\"MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault css-1fhxy4v-MuiAvatar-root\\"><img src=\\"file:///src/assets/images/works/infra-register.jpg\\" alt=\\"水道光熱費登録LINE-bot\\" width=\\"100%\\" height=\\"auto\\"></div>
                 </div>
                 <div class=\\"MuiListItemText-root MuiListItemText-multiline css-konndc-MuiListItemText-root\\"><span class=\\"MuiTypography-root MuiTypography-body1 MuiListItemText-primary css-10hburv-MuiTypography-root\\">水道光熱費登録LINE-bot</span>
                   <p class=\\"MuiTypography-root MuiTypography-body2 MuiListItemText-secondary css-1ijlrmj-MuiTypography-root\\">水道光熱費をGoogleDrive上のエクセルに登録するLINE-bot</p>
                 </div><span class=\\"MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root\\"></span>
               </a></li>
           </div>
-          <div>
+          <div style=\\"opacity: 0;\\">
             <li class=\\"MuiListItem-root MuiListItem-gutters MuiListItem-padding css-13v49lt-MuiListItem-root\\"><a class=\\"MuiButtonBase-root MuiListItem-root MuiListItem-gutters MuiListItem-padding MuiListItem-button css-ltlrkn-MuiButtonBase-root-MuiListItem-root\\" tabindex=\\"0\\" role=\\"button\\">
                 <div class=\\"MuiListItemAvatar-root css-1e9lk82-MuiListItemAvatar-root\\">
-                  <div class=\\"MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault css-1fhxy4v-MuiAvatar-root\\"><img src=\\"file:///src/assets/images/works/okojotter.jpg\\" alt=\\"Okojotter\\" width=\\"100%\\" height=\\"auto\\" /></div>
+                  <div class=\\"MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault css-1fhxy4v-MuiAvatar-root\\"><img src=\\"file:///src/assets/images/works/okojotter.jpg\\" alt=\\"Okojotter\\" width=\\"100%\\" height=\\"auto\\"></div>
                 </div>
                 <div class=\\"MuiListItemText-root MuiListItemText-multiline css-konndc-MuiListItemText-root\\"><span class=\\"MuiTypography-root MuiTypography-body1 MuiListItemText-primary css-10hburv-MuiTypography-root\\">Okojotter</span>
                   <p class=\\"MuiTypography-root MuiTypography-body2 MuiListItemText-secondary css-1ijlrmj-MuiTypography-root\\">自分用のつぶやき専用Twitterクライアント</p>
                 </div><span class=\\"MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root\\"></span>
               </a></li>
           </div>
-          <div>
+          <div style=\\"opacity: 0;\\">
             <li class=\\"MuiListItem-root MuiListItem-gutters MuiListItem-padding css-13v49lt-MuiListItem-root\\"><a class=\\"MuiButtonBase-root MuiListItem-root MuiListItem-gutters MuiListItem-padding MuiListItem-button css-ltlrkn-MuiButtonBase-root-MuiListItem-root\\" tabindex=\\"0\\" role=\\"button\\">
                 <div class=\\"MuiListItemAvatar-root css-1e9lk82-MuiListItemAvatar-root\\">
-                  <div class=\\"MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault css-1fhxy4v-MuiAvatar-root\\"><img src=\\"file:///src/assets/images/works/rename-media.gif\\" alt=\\"メディアファイル名変更スクリプト\\" width=\\"100%\\" height=\\"auto\\" /></div>
+                  <div class=\\"MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault css-1fhxy4v-MuiAvatar-root\\"><img src=\\"file:///src/assets/images/works/rename-media.gif\\" alt=\\"メディアファイル名変更スクリプト\\" width=\\"100%\\" height=\\"auto\\"></div>
                 </div>
                 <div class=\\"MuiListItemText-root MuiListItemText-multiline css-konndc-MuiListItemText-root\\"><span class=\\"MuiTypography-root MuiTypography-body1 MuiListItemText-primary css-10hburv-MuiTypography-root\\">メディアファイル名変更スクリプト</span>
                   <p class=\\"MuiTypography-root MuiTypography-body2 MuiListItemText-secondary css-1ijlrmj-MuiTypography-root\\">メディアファイル名をメディア作成日時をもとに変更するスクリプト</p>
