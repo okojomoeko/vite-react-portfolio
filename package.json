@@ -1,21 +1,4 @@
 {
-  "name": "vite-react",
-  "private": true,
-  "version": "0.0.0",
-  "scripts": {
-    "build": "tsc && vite build",
-    "coverage": "vitest run --coverage",
-    "dev": "vite",
-    "format": "eslint 'src/**/*.{ts,tsx}' --max-warnings=0 --fix; prettier --write 'src/**/*.{ts,tsx,json}'",
-    "lint": "eslint 'src/**/*.{ts,tsx}' --max-warnings=0",
-    "lint-staged": "lint-staged",
-    "preview": "vite preview",
-    "test": "vitest run",
-    "test:ui": "vitest --ui",
-    "test:watch": "vitest watch",
-    "pre-commit": "lint-staged",
-    "prepare": "husky install"
-  },
   "dependencies": {
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
@@ -66,5 +49,22 @@
       "npx eslint \"src/**/*.{ts,tsx}\" --max-warnings=0 --fix",
       "npx prettier --write 'src/**/*.{ts,tsx,json}'"
     ]
-  }
+  },
+  "name": "vite-react",
+  "private": true,
+  "scripts": {
+    "build": "tsc && vite build",
+    "coverage": "vitest run --coverage",
+    "dev": "vite",
+    "format": "eslint 'src/**/*.{ts,tsx}' --max-warnings=0 --fix; prettier --write 'src/**/*.{ts,tsx,json}'",
+    "lint": "eslint 'src/**/*.{ts,tsx}' --max-warnings=0",
+    "lint-staged": "lint-staged",
+    "pre-commit": "lint-staged",
+    "prepare": "husky install",
+    "preview": "vite preview",
+    "test": "vitest run",
+    "test:ui": "vitest --ui",
+    "test:watch": "vitest watch"
+  },
+  "version": "0.0.0"
 }
