@@ -1,26 +1,9 @@
 {
-  "name": "vite-react",
-  "private": true,
-  "version": "0.0.0",
-  "scripts": {
-    "build": "tsc && vite build",
-    "coverage": "vitest run --coverage",
-    "dev": "vite",
-    "format": "eslint 'src/**/*.{ts,tsx}' --max-warnings=0 --fix; prettier --write 'src/**/*.{ts,tsx,json}'",
-    "lint": "eslint 'src/**/*.{ts,tsx}' --max-warnings=0",
-    "lint-staged": "lint-staged",
-    "preview": "vite preview",
-    "test": "vitest run",
-    "test:ui": "vitest --ui",
-    "test:watch": "vitest watch",
-    "pre-commit": "lint-staged",
-    "prepare": "husky install"
-  },
   "dependencies": {
-    "@emotion/react": "^11.10.4",
+    "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
     "@mui/icons-material": "^5.10.9",
-    "@mui/material": "^5.10.11",
+    "@mui/material": "^5.10.12",
     "@react-hook/window-size": "^3.1.1",
     "framer-motion": "^6.5.1",
     "react": "^17.0.2",
@@ -34,16 +17,16 @@
     "@testing-library/react": "^12.1.5",
     "@testing-library/react-hooks": "^8.0.1",
     "@testing-library/user-event": "^14.4.3",
-    "@types/babel__core": "^7.1.19",
+    "@types/babel__core": "^7.1.20",
     "@types/node": "^18.11.8",
     "@types/pretty": "^2.0.1",
     "@types/react": "^17.0.50",
     "@types/react-dom": "^17.0.17",
     "@types/react-scroll": "^1.8.4",
-    "@typescript-eslint/eslint-plugin": "^5.42.0",
-    "@typescript-eslint/parser": "^5.40.1",
+    "@typescript-eslint/eslint-plugin": "^5.42.1",
+    "@typescript-eslint/parser": "^5.42.0",
     "@vitejs/plugin-react": "^2.2.0",
-    "eslint": "^8.26.0",
+    "eslint": "^8.27.0",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-config-airbnb-typescript": "^17.0.0",
     "eslint-config-prettier": "^8.5.0",
@@ -52,19 +35,36 @@
     "eslint-plugin-react": "^7.31.10",
     "eslint-plugin-react-hooks": "^4.6.0",
     "happy-dom": "^7.6.6",
-    "husky": "^8.0.1",
+    "husky": "^8.0.2",
     "jsdom": "^20.0.2",
     "lint-staged": "^13.0.3",
     "prettier": "^2.7.1",
     "pretty": "^2.0.0",
     "typescript": "^4.8.4",
-    "vite": "^3.2.2",
-    "vitest": "^0.24.4"
+    "vite": "^3.2.3",
+    "vitest": "^0.25.2"
   },
   "lint-staged": {
     "*.{ts,tsx}": [
       "npx eslint \"src/**/*.{ts,tsx}\" --max-warnings=0 --fix",
       "npx prettier --write 'src/**/*.{ts,tsx,json}'"
     ]
-  }
+  },
+  "name": "vite-react",
+  "private": true,
+  "scripts": {
+    "build": "tsc && vite build",
+    "coverage": "vitest run --coverage",
+    "dev": "vite",
+    "format": "eslint 'src/**/*.{ts,tsx}' --max-warnings=0 --fix; prettier --write 'src/**/*.{ts,tsx,json}'",
+    "lint": "eslint 'src/**/*.{ts,tsx}' --max-warnings=0",
+    "lint-staged": "lint-staged",
+    "pre-commit": "lint-staged",
+    "prepare": "husky install",
+    "preview": "vite preview",
+    "test": "vitest run",
+    "test:ui": "vitest --ui",
+    "test:watch": "vitest watch"
+  },
+  "version": "0.0.0"
 }
