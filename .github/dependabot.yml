@@ -4,5 +4,6 @@ updates:
     directory: "/"
     schedule:
       interval: "weekly"
+      time: "03:00"
       timezone: "Asia/Tokyo"
     target-branch: "develop"
